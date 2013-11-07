@@ -1,0 +1,21 @@
+<div id="{{mojit_view_id}}">
+	<div id="main">
+		<h1>Flickr Photos</h1>
+		<form class="pure-form"  method="GET">
+			<fieldset>
+				<input type="search" name="q" placeholder="search" value="{{query}}">
+				<button type="submit" class="pure-button pure-button-primary">search</button>
+			</fieldset>
+		</form>
+		<div class="photos">
+			<div class="pure-g">
+				{{# eachFlickr data.photo}}
+				<div class="pure-u-1-5">
+					<img src="{{src}}" style="border:2px solid #fff">
+					<p>{{title}}</p>
+				</div>
+				{{/eachFlickr}}
+			</div>
+		</div>    
+	</div>
+</div>

@@ -1,0 +1,23 @@
+[{
+	"settings": ["master"],
+	"simpleFlickrMojit": {
+		"verbs": ["get"],
+		"path": "/simple",
+		"call": "simpleFlickrMojit.index"
+	},
+	"lazyFlickrMojit": {
+		"verbs": ["get"],
+		"path": "/lazy",
+		"call": "lazyFlickrMojit.index"
+	},
+	"lazyFlickrMojitWithStorage": {
+		"verbs": ["get"],
+		"path": "/lazyStorage",
+		"call": "lazyFlickrMojitWithStorage.index"
+	},
+	"lazyFlickrMojitWithStorageNDocumentWrite": {
+		"verbs": ["get"],
+		"path": "/lazyStorageWithDocumentWrite",
+		"call": "lazyFlickrMojitWithStorageNDocumentWrite.index"
+	}
+}]

@@ -1,0 +1,15 @@
+<div id="{{mojit_view_id}}">
+	<div id="main">
+		<h1>Flickr Photos</h1>
+		<form class="pure-form"  method="GET">
+			<fieldset>
+				<input type="search" name="q" placeholder="search" value="{{query}}">
+				<button type="submit" class="pure-button pure-button-primary">search</button>
+			</fieldset>
+		</form>
+		<div class="photos">
+			<script>(function(){var a=window.localStorage;a&&((a=a.getItem("flickr-data-{{query}}"))?document.write(a):document.write("<div class=\"loading\">Loading.....</div>"))})();</script>	
+		</div>    
+		
+	</div>
+</div>

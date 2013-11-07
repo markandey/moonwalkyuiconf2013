@@ -1,0 +1,51 @@
+[{
+    "settings": ["master"],
+    "appPort": "8666",
+    "specs": {
+        "simpleFlickrMojit": {
+            "type": "HTMLFrameMojit",
+            "config": {
+                "title": "Flickr Photos",
+                "deploy":true,
+                "child": {
+                    "type": "simpleFlickrMojit"
+                }
+            }
+        },
+        "lazyFlickrMojit": {
+            "type": "HTMLFrameMojit",
+            "config": {
+                "title": "Lazy Flickr Photos",
+                "deploy":true,
+                "child": {
+                    "type": "lazyFlickrMojit"
+                }
+            }
+        },
+         "lazyFlickrMojitWithStorage": {
+            "type": "HTMLFrameMojit",
+            "config": {
+                "title": "Lazy Flickr Photos with Storage",
+                "deploy":true,
+                "child": {
+                    "type": "lazyFlickrMojitWithStorage"
+                }
+            }
+        },
+         "lazyFlickrMojitWithStorageNDocumentWrite": {
+            "type": "HTMLFrameMojit",
+            "config": {
+                "title": "Lazy Flickr Photos with StorageNDocumentWrite",
+                "deploy":true,
+                "child": {
+                    "type": "lazyFlickrMojitWithStorageNDocumentWrite"
+                }
+            }
+        }
+    }
+}, {
+    "settings": ["environment:development"],
+    "staticHandling": {
+        "forceUpdate": true
+    }
+}]

@@ -1,0 +1,23 @@
+html, body{
+	text-align: center;
+	background: #eee;
+}
+body{
+	background: #eee;
+}
+#main{
+	text-align: left;
+	margin: auto;
+	width:800px;
+	background: #fff;
+	padding: 10px;
+}
+.loading{
+	min-height: 400px;
+	font-size: 25px;
+	padding-top: 20px;
+	background-color: #fbb;
+	;
+	width:800px;
+	margin: auto;
+}
